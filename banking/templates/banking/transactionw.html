@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+
+
+
+{% block content%}
+<h2>Amount Withdraw from this Account :{{account}} </h2>
+<h3>Date&Time  Amount</h3><br>
+{% for item in value %}
+	
+	 {{item.time_date}} {{item.amount}}
+	<br>
+
+{% endfor %}
+<br>
+<br>
+<h2>Amount Deposite in this Account :{{account}} </h2>
+<h3>{{value1}}</h3>
+
+
+{% endblock%}

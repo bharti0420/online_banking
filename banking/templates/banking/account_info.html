@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+	{% block content %}
+	<h3>Enter Account No.</h3>
+	<form method='Post'>
+		{% csrf_token %}
+		<table>
+			{{form.as_table}}
+		</table>
+		<input type="submit" value="OK">
+	</form>
+	{% endblock %}
